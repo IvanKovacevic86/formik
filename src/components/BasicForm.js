@@ -3,6 +3,7 @@ import { basicSchema } from "../schemas";
 
 const onSubmit = async (values, actions) => {
   await new Promise((resolve) => setTimeout(resolve, 1000));
+  alert("Data submited");
   actions.resetForm();
 };
 

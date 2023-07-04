@@ -1,4 +1,4 @@
-import { Formik, Form, Field } from "formik";
+import { Formik, Form } from "formik";
 import { advancedSchema } from "../schemas";
 import CustomCheckbox from "./CustomCheckbox";
 import CustomInput from "./CustomInput";
@@ -7,6 +7,7 @@ import CustomSelect from "./CustomSelect";
 const onSubmit = async (values, actions) => {
   await new Promise((resolve) => setTimeout(resolve, 1000));
   actions.resetForm();
+  alert("Data submited");
 };
 
 const AdvancedForm = () => {
